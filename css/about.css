@@ -1,0 +1,580 @@
+/*-- -------------------------- -->
+<---          LANDING           -->
+<--- -------------------------- -*/
+
+#about-header {
+    height: 250px;
+    width: 100%;
+    background:url("../images/painting-house.jpg");
+    background-position: center center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+}
+
+.about-dark {
+    background: var(--main-red);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.58
+}
+
+#about-header h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    position: relative;
+    z-index: 5;
+    font-weight: 900;
+}
+
+/*-- -------------------------- -->
+<---           ABOUT            -->
+<--- -------------------------- -*/
+
+.about-flex-img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.about-topper-content h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 50px 0 0 0;
+    text-align: left;
+}
+
+.about-line {
+    width: 100%;
+    height: 2px;
+    background: var(--main-red);
+    opacity: .5;
+    margin: 15px auto;
+}
+
+.about-topper-content p {
+    text-align: left;
+}
+
+.about-topper-content p:last-child {
+    margin-bottom: 60px;
+}
+
+/*-- -------------------------- -->
+<---          ICONS             -->
+<--- -------------------------- -*/
+
+.about-icons-wrapper {
+    height: auto;
+    background: url("../images/about-background.jpg");
+    background-position: center center;
+}
+
+.about-item {
+    margin-bottom: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.about-container {
+    padding: 80px 0 20px 0;
+}
+
+.about-item svg {
+    height: 43px;
+}
+
+p.number {
+    color: var(--main-red);
+    font-size: 43px;
+    margin: 10px 0 5px 0;
+}
+
+p.text {
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.large-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.large-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: transparent;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid var(--main-red);
+    margin-bottom: 15px;
+}
+
+.large-item p {
+    font-size: 40px;
+    color: var(--main-red);
+    margin: 0;
+}
+
+/*-- -------------------------- -->
+<---         WHO WE ARE         -->
+<--- -------------------------- -*/
+
+#about-content {
+    padding: 50px 0;
+}
+
+.about-flex-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.about-flex-line {
+    width: 100%;
+    height: 1px;
+    background: var(--main-red);
+    opacity: .5;
+    margin: 10px 0;
+}
+
+.about-flex-content p {
+    text-align: left;
+}
+
+.about-card {
+    display: none;
+}
+
+/*-- -------------------------- -->
+<---          CONTACT           -->
+<--- -------------------------- -*/
+
+#contact {
+    height: 300px;
+    position: relative;
+    background: url("../images/paint-brushes.jpg");
+    background-position: center center;
+}
+
+.contact-dark {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--main-red);
+    opacity: .8;
+}
+
+.left h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.left p {
+    color: #fff;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.contact-button {
+    background: #fff;
+    color: var(--main-red);
+    border: none;
+}
+
+.contact-button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.contact-flex {
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    z-index: 5;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+    /*-- -------------------------- -->
+    <---           HEADER           -->
+    <--- -------------------------- -*/
+
+    #about-header {
+        height: 300px;
+    }
+
+    h1.services-header {
+        font-size: 70px !important;
+    }
+
+    /*-- -------------------------- -->
+    <---           ABOUT            -->
+    <--- -------------------------- -*/
+
+    .about-flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        margin: 60px 0;
+    }
+
+    .about-flex-content {
+        width: 40%;
+    }
+
+    .about-flex-img {
+        width: 250px;
+    }
+
+    /*-- -------------------------- -->
+    <---          CONTACT           -->
+    <--- -------------------------- -*/
+
+    .contact-button {
+        width: 250px;
+        margin: 10px auto;
+    }
+
+    .contact-flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .left p, .left h3 {
+        text-align: center;
+    }
+
+    .left p {
+        margin-bottom: 10px
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+	
+	/*-- -------------------------- -->
+    <---           HEADER           -->
+    <--- -------------------------- -*/
+
+    #about-header {
+        height: 450px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    h1.services-header {
+        font-size: 70px !important;
+        text-align: center;
+        margin: auto;
+    }
+
+    .about-line {
+        width: 721px;
+        margin: 15px auto;
+    }
+
+    .about-topper-content p {
+        width: 721px;
+        margin: 0 auto 50px auto;
+    }
+
+    .about-topper-content h2 {
+        width: 721px;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+    .about-icons-wrapper {
+        height: 600px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding: 0;
+        height: 600px;
+    }
+
+    .about-item {
+        margin: 0 auto 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .about-item h3 {
+        font-size: 23px;
+    }
+
+    .large-container {
+        margin: auto 30px;
+    }
+
+    p.number {
+        font-size: 30px;
+    }
+
+    p.text {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 0;
+        width: 140px;
+    }
+
+    /*-- -------------------------- -->
+    <---           ABOUT            -->
+    <--- -------------------------- -*/
+
+    .about-card {
+        display: block;
+    }
+
+    #about-content {
+        width: 100%;
+        height: 500px;
+    }
+
+    .about-flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 980px;
+        height: 400px;
+        position: relative;
+    }
+
+    .about-flex-img {
+        display: none;
+    }
+
+    .about-flex-content p {
+        width: 600px;
+    }
+
+    .about-card {
+        width: 292px;
+        height: auto;
+        border: 1px solid rgba(219,219,219, .6);
+        -webkit-background-clip: padding-box; /*Safari*/ ;
+        background-clip: padding-box /*the rest*/;
+        position: absolute;
+        top: -220px;
+        right: 0px;
+    }
+
+    .about-card img {
+        width: 100%;
+        height: auto;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+    }
+
+    .about-card svg {
+        height: 36px;
+        width: auto;
+        margin: 40px 100% 20px 0;
+        text-align: left;
+    }
+
+    .about-card p,
+    .about-card h4 {
+        text-align: left;
+    }
+
+    #call-anytime {
+        font-size: 23px !important;
+        font-family: raleway,sans-serif;
+        text-align: left;
+    }
+
+    .card-content h4 {
+        font-size: 35px;
+        margin: 0 0 15px 0;
+        color: var(--main-red);
+        font-family: raleway-semibold,raleway,sans-serif;
+    }
+
+    /*-- -------------------------- -->
+    <---           CONTACT          -->
+    <--- -------------------------- -*/
+
+    .contact-flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: auto;
+        text-align: left;
+    }
+
+    .left p,
+    .left h3 {
+        text-align: left;
+        margin: 0;
+    }
+
+    .contact-button {
+        width: 250px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #contact {
+        height: 170px;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .contact-dark {
+        height: 100%;
+    }
+}

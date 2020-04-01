@@ -1,0 +1,91 @@
+/*-- -------------------------- -->
+<---          LANDING           -->
+<--- -------------------------- -*/
+
+#contact-header {
+    height: 250px;
+    width: 100%;
+    background:url("../images/modern.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+}
+
+.contact-dark {
+    background: var(--main-red);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+}
+
+#contact-header h1 {
+    font-size: 45px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 5;
+    font-weight: 900;
+}
+
+/*-- -------------------------- -->
+<---          GALLERY           -->
+<--- -------------------------- -*/
+
+.gallery-content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	width: 100%;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	padding: 80px 0;
+}
+
+.gallery-content img {
+	width: 300px;
+	margin: 6px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+	.mobile-nav {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+
+}
+
+@media screen and (min-width: 1025px) {
+
+
+	.contact-header {
+		font-size: 70px !important;
+	}
+
+	#contact-header {
+		height: 450px;
+		background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+	}
+}

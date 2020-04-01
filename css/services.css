@@ -1,0 +1,328 @@
+/*-- -------------------------- -->
+<---          LANDING           -->
+<--- -------------------------- -*/
+
+#contact-header {
+    height: 250px;
+    width: 100%;
+    background:url("../images/kitchen-compressor.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+}
+
+.contact-dark {
+    background: #000;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+#contact-header h1 {
+    font-size: 45px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 5;
+    font-weight: 900;
+}
+
+/*-- -------------------------- -->
+<---          SERVICES          -->
+<--- -------------------------- -*/
+
+.services-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 50px auto !important;
+}
+
+.card {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 350px;
+    margin-bottom: 50px;
+    border-radius: 10px !important;
+    -webkit-box-shadow: 1px -1px 33px -10px rgba(0,0,0,0.36);
+    box-shadow: 1px -1px 33px -10px rgba(0,0,0,0.36);
+}
+
+.card img {
+    max-width: 350px;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+    padding: 30px 20px;
+}
+
+.card-content h3 {
+    text-align: left;
+    font-weight: bold;
+}
+
+.services-line {
+    height: 1px;
+    width: 80%;
+    background: var(--main-red);
+    margin: 10px auto 10px 0;
+}
+
+.card-content p {
+    text-align: left;
+}
+
+/*-- -------------------------- -->
+<---          CONTACT           -->
+<--- -------------------------- -*/
+
+#contact {
+    height: 300px;
+    position: relative;
+    background: url("../images/paint-brushes.jpg");
+    background-position: center center;
+}
+
+.contact-dark {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--main-red);
+    opacity: .8;
+}
+
+.left h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.left p {
+    color: #fff;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.contact-button {
+    background: #fff;
+    color: var(--main-red);
+    border: none;
+}
+
+.contact-button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.contact-flex {
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    z-index: 5;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+
+	#contact-header {
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.services-flex {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
+
+    .card {
+		margin: 20px;
+		width: 300px;
+		height: 460px;
+	}
+
+	.card img {
+		width: 300px;
+		height: 200px;
+	}
+	
+	.mobile-nav {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+
+	/*-- -------------------------- -->
+    <---          CONTACT           -->
+    <--- -------------------------- -*/
+
+    .contact-button {
+        width: 250px;
+        margin: 10px auto;
+    }
+
+    .contact-flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .left p, .left h3 {
+        text-align: center;
+    }
+
+    .left p {
+        margin-bottom: 10px
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+
+    /*-- -------------------------- -->
+    <---          SERVICES          -->
+	<--- -------------------------- -*/
+
+	#contact-header {
+		height: 450px;
+		background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+	}
+	
+	.contact-header {
+		font-size: 70px !important;
+	}
+
+    .card {
+		margin: 20px;
+		width: 350px;
+		height: 510px;
+	}
+
+	.card img {
+		height: 250px !important;
+		width: 350px;
+	}
+
+    .services-flex {
+        max-width: 1300px !important;
+        margin-top: 100px !important;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+	}
+	
+	/*-- -------------------------- -->
+    <---           CONTACT          -->
+    <--- -------------------------- -*/
+
+    .contact-flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: auto;
+        text-align: left;
+    }
+
+    .left p,
+    .left h3 {
+        text-align: left;
+        margin: 0;
+    }
+
+    .contact-button {
+        width: 250px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #contact {
+        height: 170px;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .contact-dark {
+        height: 100%;
+    }
+
+}
