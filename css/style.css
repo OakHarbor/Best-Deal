@@ -1095,6 +1095,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003980",endCo
         margin: auto;
     }
 
+    #testimonial {
+        background-attachment: fixed;
+    }
+
     /*-- -------------------------- -->
     <---          GALLERY           -->
     <--- -------------------------- -*/
