@@ -341,8 +341,7 @@ button.card-button{
     bottom: -10px;
     position: absolute;
     background: rgb(0,57,128);
-background: -moz-linear-gradient(45deg, rgba(0,57,128,1) 0%, rgba(0,114,255,1) 53%, rgba(77,163,255,0.6671043417366946) 100%);
-background: -webkit-linear-gradient(45deg, rgba(0,57,128,1) 0%, rgba(0,114,255,1) 53%, rgba(77,163,255,0.6671043417366946) 100%);
+background: -o-linear-gradient(45deg, rgba(0,57,128,1) 0%, rgba(0,114,255,1) 53%, rgba(77,163,255,0.6671043417366946) 100%);
 background: linear-gradient(45deg, rgba(0,57,128,1) 0%, rgba(0,114,255,1) 53%, rgba(77,163,255,0.6671043417366946) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003980",endColorstr="#4da3ff",GradientType=1);
 }
