@@ -361,7 +361,8 @@ nav {
 	     -o-transition-delay: .2s;
 	        transition-delay: .2s;
 	opacity: 0;
-	visibility: hidden;
+    visibility: hidden;
+    text-decoration: none;
 }
 
 .active-menu {
@@ -551,7 +552,7 @@ nav {
 		-webkit-transition: .2s ease;
 		-o-transition: .2s ease;
         transition: .2s ease;
-        border-bottom: 3px solid var(--primary);
+        text-decoration: none;
 	}
 
 	.side-nav li {
