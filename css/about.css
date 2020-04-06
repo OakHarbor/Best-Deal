@@ -5,7 +5,7 @@
 #about-header {
     height: 250px;
     width: 100%;
-    background:url("../images/painting-house.jpg");
+    background:url("../images/modern.jpg");
     background-position: center center;
     color: #fff;
     background-repeat: no-repeat;
@@ -22,14 +22,6 @@
     position: relative;
 }
 
-.about-dark {
-    background: var(--main-red);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: 0.58
-}
-
 #about-header h1 {
     font-size: 40px;
     text-align: center;
@@ -44,16 +36,40 @@
 <---           ABOUT            -->
 <--- -------------------------- -*/
 
+#about-topper {
+    position: relative;
+    height: auto;
+}
+
 .about-flex-img {
     width: 100%;
     margin-bottom: 50px;
 }
 
 .about-topper-content h2 {
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 900;
     margin: 50px 0 0 0;
     text-align: left;
+}
+
+.about-topper-content h2 span {
+    display: block;
+    color: var(--primary);
+}
+
+.mobile-remove {
+    display: none;
+}
+
+.about-topper-content img {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.44);
+        box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.44);
 }
 
 .about-line {
@@ -72,6 +88,25 @@
     margin-bottom: 60px;
 }
 
+.about-icons-wrapper {
+    position: relative;
+    padding-top: 50px;
+}
+
+.card-svg,
+.top-img-svg {
+    display: none;
+}
+
+.about-wave {
+    -webkit-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+            transform: scaleY(-1);
+    position: absolute;
+    height: 150px !important;
+    top: -2px;
+}
+
 /*-- -------------------------- -->
 <---          ICONS             -->
 <--- -------------------------- -*/
@@ -80,6 +115,18 @@
     height: auto;
     background: url("../images/about-background.jpg");
     background-position: center center;
+    position: relative;
+}
+
+.icons-dark {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,57,128);
+    background: -o-linear-gradient(45deg, rgba(0,57,128,1) 0%, rgba(77,167,255,1) 0%, rgba(33,148,255,0.8855917366946778) 49%, rgba(0,114,255,1) 86%);
+    background: linear-gradient(45deg, rgba(0,57,128,1) 0%, rgba(77,167,255,1) 0%, rgba(33,148,255,0.8855917366946778) 49%, rgba(0,114,255,1) 86%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003980",endColorstr="#0072ff",GradientType=1);
 }
 
 .about-item {
@@ -98,21 +145,26 @@
 
 .about-container {
     padding: 80px 0 20px 0;
+    position: relative;
+    z-index: 1000;
+    padding-bottom: 100px;
 }
 
 .about-item svg {
-    height: 43px;
+    height: 63px;
 }
 
 p.number {
-    color: var(--main-red);
+    color: #fff;
     font-size: 43px;
     margin: 10px 0 5px 0;
 }
 
-p.text {
-    font-size: 17px;
+.text {
+    font-size: 1.7em;
+    color: #fff;
     font-weight: 900;
+    text-align: center;
 }
 
 .large-container {
@@ -151,28 +203,71 @@ p.text {
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    border: 3px solid var(--main-red);
+    border: 3px solid #fff;
     margin-bottom: 15px;
 }
 
 .large-item p {
     font-size: 40px;
-    color: var(--main-red);
+    color: #fff;
     margin: 0;
+    text-align: center;
+}
+
+.box {
+    margin-bottom: 50px;
+}
+
+.box:last-child {
+    margin-bottom: 0;
+}
+
+.box svg {
+    width: 50px;
+    height: auto;
+    margin-bottom: 60px;
+    margin-right: 30px;
+    float: left;
+}
+
+.top-clippy {
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    bottom: -1px;
+    background: #fff;
+    -webkit-clip-path: polygon(0 93%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 93%, 100% 0, 100% 100%, 0% 100%);
 }
 
 /*-- -------------------------- -->
 <---         WHO WE ARE         -->
 <--- -------------------------- -*/
 
+.clippy-bottom {
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    bottom: -148px;
+    background: #fff;
+    -webkit-clip-path: polygon(0 0, 100% 93%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 93%, 100% 100%, 0 100%);
+    -webkit-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+            transform: scaleY(-1);
+    z-index: 1000;
+}
+
 #about-content {
     padding: 50px 0;
+    position: relative;
 }
 
 .about-flex-content h3 {
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 700;
     text-align: left;
+    line-height: 1.5em;
 }
 
 .about-flex-line {
@@ -183,71 +278,41 @@ p.text {
     margin: 10px 0;
 }
 
-.about-flex-content p {
+.grey-text {
     text-align: left;
+    color: #838383;
+    font-size: 1.1em;
+    line-height: 1.7em !important;
+    margin-bottom: 80px;
 }
 
 .about-card {
     display: none;
 }
 
-/*-- -------------------------- -->
-<---          CONTACT           -->
-<--- -------------------------- -*/
+.about-wave-bottom {
+    position: absolute;
+    z-index: 1000;
+    height: 150px !important;
+    bottom: -2px;
+}
+
+.contact-wave-bottom {
+    position: absolute;
+    z-index: 1000;
+    height: 150px !important;
+    bottom: -148px;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
 
 #contact {
-    height: 300px;
-    position: relative;
-    background: url("../images/paint-brushes.jpg");
-    background-position: center center;
+    padding-top: 50px;
 }
 
 .contact-dark {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: var(--main-red);
-    opacity: .8;
-}
-
-.left h3 {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.left p {
-    color: #fff;
-    text-align: center;
-    margin: 10px 0 0 0;
-}
-
-.contact-button {
-    background: #fff;
-    color: var(--main-red);
-    border: none;
-}
-
-.contact-button:hover {
-    background: #000;
-    color: #fff;
-}
-
-.contact-flex {
-    height: 300px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: relative;
-    z-index: 5;
+    top: 0;
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -282,7 +347,10 @@ p.text {
     }
 
     .about-flex-content {
-        width: 40%;
+    }
+
+    .about-topper-content h2 span {
+        display: block;
     }
 
     .about-flex-img {
@@ -355,11 +423,29 @@ p.text {
         font-size: 70px !important;
         text-align: center;
         margin: auto;
+        margin-top: 210px;
     }
 
     .about-line {
         width: 721px;
         margin: 15px auto;
+    }
+
+    .about-topper-content {
+        position: relative;
+    }
+
+    .top-img-svg {
+        display: block;
+        position: absolute;
+        opacity: .1;
+        z-index: -1;
+        top: -60px;
+        left: -180px;
+        height: 300px;
+        -webkit-transform: rotate(100deg);
+            -ms-transform: rotate(100deg);
+                transform: rotate(100deg);
     }
 
     .about-topper-content p {
@@ -370,11 +456,11 @@ p.text {
     .about-topper-content h2 {
         width: 721px;
         margin: auto;
-        margin-top: 80px;
+        margin-top: 120px;
     }
 
     .about-icons-wrapper {
-        height: 600px;
+        height: auto;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -400,6 +486,7 @@ p.text {
     }
 
     .about-item {
+        width: 204px;
         margin: 0 auto 0 auto;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -439,13 +526,30 @@ p.text {
     <---           ABOUT            -->
     <--- -------------------------- -*/
 
-    .about-card {
-        display: block;
-    }
-
     #about-content {
         width: 100%;
-        height: 500px;
+        height: auto;
+        padding-top: 150px;
+        padding-bottom: 130px;
+        position: relative;
+    }
+
+    .about-icons-wrapper {
+        padding-bottom: 50px;
+    }
+
+    .about-topper-content {
+        padding-bottom: 100px;
+    }
+
+    .about-topper-content p,
+    .about-topper-content h2 {
+        margin-right: 0 !important;
+        width: 700px;
+    }
+
+    .about-topper-content h2 {
+        font-size: 34px;
     }
 
     .about-flex {
@@ -471,19 +575,56 @@ p.text {
         display: none;
     }
 
+    .mobile-remove {
+        display: inline-block;
+        width: 350px !important;
+        margin: 0 !important;
+        float: left;
+    }
+
+    .desktop-remove {
+        display: none;
+    }
+
     .about-flex-content p {
         width: 600px;
     }
 
     .about-card {
-        width: 292px;
+        display: block;
+        z-index: 2000;
+        width: 350px;
         height: auto;
         border: 1px solid rgba(219,219,219, .6);
         -webkit-background-clip: padding-box; /*Safari*/ ;
         background-clip: padding-box /*the rest*/;
         position: absolute;
-        top: -220px;
-        right: 0px;
+        top: -270px;
+        right: -100px;
+        border-radius: 8px;
+        -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.44);
+        box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.44);
+        z-index: 3000;
+        background: #fff;
+    }
+
+    .card-svg {
+        position: absolute;
+        height: 300px !important;
+        bottom: 0px;
+        opacity: .1;
+        right: -100px;
+        bottom: 100px;
+        display: block;
+    }
+
+    .top-card-svg {
+        bottom: 400px;
+        right: 90px;
+        z-index: 1000;
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
     }
 
     .about-card img {
@@ -491,6 +632,7 @@ p.text {
         height: auto;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
+        border-radius: 9px 9px 0 0;
     }
 
     .about-card svg {
@@ -498,6 +640,10 @@ p.text {
         width: auto;
         margin: 40px 100% 20px 0;
         text-align: left;
+    }
+
+    .about-item svg {
+        width: auto;
     }
 
     .about-card p,
@@ -511,70 +657,15 @@ p.text {
         text-align: left;
     }
 
+    .card-content {
+        padding: 25px !important;
+        position: relative;
+    }
+
     .card-content h4 {
         font-size: 35px;
-        margin: 0 0 15px 0;
-        color: var(--main-red);
-        font-family: raleway-semibold,raleway,sans-serif;
+        margin: 15px 0 15px 0;
+        color: var(--primary);
     }
 
-    /*-- -------------------------- -->
-    <---           CONTACT          -->
-    <--- -------------------------- -*/
-
-    .contact-flex {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        height: auto;
-        text-align: left;
-    }
-
-    .left p,
-    .left h3 {
-        text-align: left;
-        margin: 0;
-    }
-
-    .contact-button {
-        width: 250px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    #contact {
-        height: 170px;
-        position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .contact-dark {
-        height: 100%;
-    }
 }

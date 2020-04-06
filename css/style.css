@@ -5,7 +5,7 @@
 #hero {
     min-height: calc(100vh - 65px);
     width: 100%;
-    background:url("../images/cabinet-stain.jpg");
+    background:url("../images/fancy-house.jpgs");
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -55,27 +55,48 @@
 	padding: 9px 0;
 }
 
-button.work,
-button.quote-button {
-	height: 50px;
-	margin: 10px 0;
-	padding: 0;
-	font-size: 13px;
-	width: 200px;
+.about-button,
+.quote-button {
+    width: 188px;
+    display: block;
 }
 
-.hero-quote:hover {
+.quote-button {
+    color:#fff;
+    background: var(--primary);
+}
+
+.about-button {
+    padding-left: 15px;
     border: none;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
-.work {
-	background: transparent;
-	border: 2px solid #fff;
-	color: #fff;
+.arrow-svg {
+    position: relative;
+    z-index: 100;
+    width: 40px;
+    height: 20px;
+    margin-left: 15px;
 }
 
-#call-strip h3 {
-    display: none;
+.landing-wave {
+    z-index: 2;
+    position: absolute;
+    bottom: -2px;
+    height: 150px !important;
+    -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
 }
 
 /*-- -------------------------- -->
@@ -140,7 +161,7 @@ button.quote-button {
 	text-align: left;
 	border: none !important;
     margin: 60px auto;
-    height: 450px;
+    height: auto;
     width: 100%;
     max-width: 350px;
     border-radius: 10px;
@@ -157,6 +178,14 @@ button.quote-button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+}
+
+.cards svg {
+    width: 100px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 0;
 }
 
 .cards img {
@@ -226,6 +255,22 @@ button.card-button{
 
 #about {
     position: relative;
+}
+
+.image {
+    position: relative;
+}
+
+.card-svg {
+    position: absolute;
+    opacity: .1;
+    height: 300px !important;
+    width:  300px !important;
+    z-index: -1;
+    bottom: -30px;
+    -webkit-transform: rotate(100deg);
+        -ms-transform: rotate(100deg);
+            transform: rotate(100deg);
 }
 
 .about-content img {
@@ -354,9 +399,9 @@ button.card-button{
     bottom: -10px;
     position: absolute;
     background: rgb(0,57,128);
-background: -o-linear-gradient(45deg, rgba(0,57,128,1) 0%, rgba(0,114,255,1) 53%, rgba(77,163,255,0.6671043417366946) 100%);
-background: linear-gradient(45deg, rgba(0,57,128,1) 0%, rgba(0,114,255,1) 53%, rgba(77,163,255,0.6671043417366946) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003980",endColorstr="#4da3ff",GradientType=1);
+    background: -o-linear-gradient(45deg, rgba(0,57,128,1) 0%, rgba(0,114,255,1) 53%, rgba(77,163,255,0.6671043417366946) 100%);
+    background: linear-gradient(45deg, rgba(0,57,128,1) 0%, rgba(0,114,255,1) 53%, rgba(77,163,255,0.6671043417366946) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003980",endColorstr="#4da3ff",GradientType=1);
 }
 
 
@@ -671,16 +716,21 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003980",endCo
                 flex-direction: row;
     }
 
-    button.quote {
-        margin-right: 20px;
-    }
 
     /*-- -------------------------- -->
     <---          BIG 3             -->
     <--- -------------------------- -*/
 
     #three-card {
-        height: auto;
+        height: 1500px !important;
+    }
+
+    .cards {
+        height: auto !important;
+    }
+
+    .cards svg {
+        width: 100px;
     }
 
     .card-flex {
@@ -777,6 +827,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003980",endCo
     <---          ABOUT             -->
     <--- -------------------------- -*/
 
+    .why-bob-topper p {
+        text-align: center;
+    }
+
     .list {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -812,6 +866,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003980",endCo
 
     .list-item p {
         font-size: 15px;
+        height: 200px;
     }
 
     .list-item svg {
@@ -897,8 +952,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003980",endCo
     <--- -------------------------- -*/
 
     #hero {
-        min-height: 800px;
-        background:url("../images/cabinet-stain.jpg");
+        min-height: 870px;
+        background:url("../images/fancy-house.jpg");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -913,6 +968,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003980",endCo
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+    }
+
+    #dark {
+        opacity: .7;
     }
 
     #home-h {
@@ -933,6 +992,19 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003980",endCo
         padding-top: 40px;
     }
 
+    .quote-button {
+        display: inline-block;
+        float: left;
+        margin-left: 0 !important;
+    }
+
+    .about-button {
+        padding-left: 30px;
+        width: auto;
+        margin-left: 34px;
+        display: inline-block;
+    }
+
     /*-- -------------------------- -->
     <---           BIG 3            -->
     <--- -------------------------- -*/
@@ -940,7 +1012,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003980",endCo
     #three-card {
         position: relative;
         z-index: 10000;
-        height: 500px;
+        height: 540px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -974,9 +1046,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003980",endCo
                 justify-content: space-between;
         height: auto;
         position: relative;
-        -webkit-transform: translateY(-150px) !important;
-            -ms-transform: translateY(-150px) !important;
-                transform: translateY(-150px) !important;
+        -webkit-transform: translateY(-190px) !important;
+            -ms-transform: translateY(-190px) !important;
+                transform: translateY(-190px) !important;
     }
 
     .more-services {
@@ -1010,10 +1082,23 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003980",endCo
 
     .why-bob-topper h2 {
         font-size: 40px;
+        text-align: center;
+    }
+
+    .why-bob-topper p {
+        text-align: center;
     }
 
     .image {
         width: 413px;
+    }
+
+    .card-svg {
+        bottom: 240px;
+        left: -90px;
+        -webkit-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+                transform: rotate(30deg);
     }
 
     .image h3 {
@@ -1023,6 +1108,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003980",endCo
     .image img {
         width: auto;
         height: 413px;
+        border-radius: 9px;
+        -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.44);
+        box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.44);
     }
 
     .list {
@@ -1145,4 +1233,4 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003980",endCo
         background-size: cover;
     }
 
-}
+} 
