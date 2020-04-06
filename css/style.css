@@ -5,7 +5,7 @@
 #hero {
     min-height: calc(100vh - 65px);
     width: 100%;
-    background:url("../images/fancy-house.jpgs");
+    background:url("/images/fancy-house.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
