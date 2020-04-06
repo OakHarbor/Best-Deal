@@ -154,9 +154,11 @@
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     z-index: -100;
+    display: none;
 }
 
 .circle2 {
+    display: none;
     position: absolute;
     width: 20px !important;
     height: auto;
@@ -179,6 +181,7 @@
 }
 
 .circle3 {
+    display: none;
     position: absolute;
     width: 20px !important;
     height: auto;
@@ -201,6 +204,7 @@
 }
 
 .circle4 {
+    display: none;
     position: absolute;
     width: 20px !important;
     height: auto;
